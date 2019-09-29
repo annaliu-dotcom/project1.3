@@ -57,7 +57,7 @@ public class Project13 {
 
         String Error = "Error. You did not do  as the instructions asked. Redirecting....\n";
 
-        String CollegeA = "I see you. You are an outstanding student that will most likely have a successful future\n"
+        String CollegesA = "I see you. You are an outstanding student that will most likely have a successful future\n"
                 + "at Harvard, Cornell, Columbia, Princeton, Duke, Dartmouth, Brown, Yale, MIT, or Stanford :)\n"
                 + "Which one of the elite schools listed above would you like to attend?\n"
                 + "1) Harvard\n"
@@ -72,7 +72,7 @@ public class Project13 {
                 + "10) Stanford\n"
                 + "11) Tough critic, please show me my other options >:|\n";
 
-        String CollegeB = "So you tried hard in high school. You will most likely have a fairly successful future at\n"
+        String CollegesB = "So you tried hard in high school. You will most likely have a fairly successful future at\n"
                 + "Rice, Northwestern, UT Austin, Trinity, UCLA, UC Berkeley, Vanderbilt University, or  University of Michigan-Ann Arbor :)\n"
                 + "Which one of the schools listed above would you like to attend?\n"
                 + "1) Rice\n"
@@ -85,7 +85,7 @@ public class Project13 {
                 + "8) University of Michigan-Ann Arbor\n"
                 + "9) Tough critic, please show me my other options. :/\n";
 
-        String CollegeC = "Great! You will most likely have a somewhat successful future at\n"
+        String CollegesC = "Great! You will most likely have a somewhat successful future at\n"
                 + "University of Texas at San Antonio, Texas Tech, University of Incarnate Word, St. Mary's University, Georgia Tech, or Texas State University :)\n"
                 + "Which one of the schools listed above would you like to attend?\n"
                 + "1) University of Texas at San Antonio\n"
@@ -96,7 +96,7 @@ public class Project13 {
                 + "6) Texas State University\n"
                 + "7) Tough critic, please show me my other options. <:{\n";
 
-        String CollegeD = "Congratulations. You might have a future at\n"
+        String CollegesD = "Congratulations. You might have a future at\n"
                 + "San Antonio College, Our Lady Of the Lake University, , or Texas State University :)\n"
                 + "Which one of the schools listed above would you like to attend?\n"
                 + "1) San Antonio College\n"
@@ -366,6 +366,7 @@ public class Project13 {
         int gradeHolder = 0;
         int SATHolder = 0;
         int ACTHolder = 0;
+        int collegeHolder = 0;
 
 
         //ASK GET SET
@@ -376,65 +377,73 @@ public class Project13 {
         System.out.print(SAT);//ask
         SATHolder = Input.nextInt();//get set
         System.out.print(ACT);//ask
-        ACTHolder = Input.nextInt();//get set
+        ACTHolder = Input.nextInt();//get sey
 
-        int colDec = gradeHolder + SATHolder + ACTHolder;
+        int collegeDecision = gradeHolder + SATHolder + ACTHolder; //3-18
 
 //LOGIC
-        switch(colDec)
+        switch(collegeDecision)
         {
-            case 1:
-                System.out.println(CollegeA);
-                break;
-            case 2:
-                System.out.println(CollegeA);
-                break;
             case 3:
-                System.out.println(CollegeA);
+                System.out.println(CollegesA);
                 break;
             case 4:
-                System.out.println(CollegeA);
+                System.out.println(CollegesA);
                 break;
             case 5:
-                System.out.println(CollegeA);
+                System.out.println(CollegesA);
                 break;
             case 6:
-                System.out.println(CollegeB);
+                System.out.println(CollegesB);
             case 7:
-                System.out.println(CollegeB);
+                System.out.println(CollegesB);
                 break;
             case 8:
-                System.out.println(CollegeB);
+                System.out.println(CollegesB);
                 break;
             case 9:
-                System.out.println(CollegeB);
+                System.out.println(CollegesB);
                 break;
             case 10:
-                System.out.println(CollegeC);
+                System.out.println(CollegesC);
                 break;
             case 11:
-                System.out.println(CollegeC);
+                System.out.println(CollegesC);
                 break;
             case 12:
-                System.out.println(CollegeC);
+                System.out.println(CollegesC);
             case 13:
-                System.out.println(CollegeC);
+                System.out.println(CollegesC);
                 break;
             case 14:
-                System.out.println(CollegeD);
+                System.out.println(CollegesD);
                 break;
             case 15:
-                System.out.println(CollegeD);
+                System.out.println(CollegesD);
                 break;
             case 16:
-                System.out.println(CollegeD);
+                System.out.println(CollegesD);
                 break;
             case 17:
-                System.out.println(CollegeD);
+                System.out.println(CollegesD);
                 break;
             case 18:
-                System.out.println(CollegeD);
+                System.out.println(CollegesD);
+            default:
+                System.out.println(CollegesD);
+
         }
+        /*collegeDecision
+            <5: collegesA
+            5-9: collegesB
+            10-: collegesC
+
+        */
+
+        //Store college decision
+        collegeHolder = Input.nextInt();
+        System.out.println(Life);
+
 
 
     }
