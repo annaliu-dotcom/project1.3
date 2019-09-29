@@ -16,6 +16,8 @@ public class Project13 {
         String Name = "Please enter your name:\n";
         Scanner Input = new Scanner(System.in);
         String NameHolder = "";
+        System.out.print(Name);
+        NameHolder=Input.nextLine();
 
         //set up variables
 
@@ -356,7 +358,7 @@ public class Project13 {
 
         String LifeABB = "You are now working as a waiter/waitress at The Cheescake Factory. It's not ideal,"
                 + "but there's not that many good jobs you can get anymore without a college degree."
-                + "1)"
+                + "1)";
 
         String GoodLuck = "I hope you have a nice life.\n";
 
@@ -367,8 +369,6 @@ public class Project13 {
 
 
         //ASK GET SET
-        System.out.print(Name);
-        NameHolder=Input.nextLine();
         System.out.print(Background);
 
         System.out.print(Grade);//ask
