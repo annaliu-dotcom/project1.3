@@ -367,6 +367,7 @@ public class Project13 {
         int SATHolder = 0;
         int ACTHolder = 0;
         int collegeHolder = 0;
+        int lifeHolder = 0;
 
 
         //ASK GET SET
@@ -443,6 +444,33 @@ public class Project13 {
         //Store college decision
         collegeHolder = Input.nextInt();
         System.out.println(Life);
+        lifeHolder = Input.nextInt();
+        switch(lifeHolder) {
+            case 1:
+                System.out.println(LifeA);
+                break;
+            case 2:
+                System.out.println(LifeB);
+                break;
+            case 3:
+                System.out.println(LifeC);
+                break;
+            case 4:
+                System.out.println(LifeD);
+                break;
+            case 5:
+                System.out.println(LifeE);
+                break;
+            case 6:
+                System.out.println(LifeF);
+                break;
+            case 7:
+                System.out.println(LifeG);
+                break;
+            case 8:
+                System.out.println(LifeH);
+                break;
+        }
 
 
 
